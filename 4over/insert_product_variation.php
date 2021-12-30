@@ -24,7 +24,7 @@ function woo4over_insert_product ($product_data, $post_id)
 
     //woo4over_insert_product_attributes($post_id, $product_data['available_attributes'], $product_data['variations']); // Add attributes passing the new post id, attributes & variations // temp comment
     
-    //woo4over_insert_product_variations($post_id, $product_data['variations'], $product_data['product_name'], $product_data['sku']); // Insert variations passing the new post id & variations   // temp comment
+    woo4over_insert_product_variations($post_id, $product_data['variations'], $product_data['product_name'], $product_data['sku']); // Insert variations passing the new post id & variations   // temp comment
 
     $product = wc_get_product( $post_id );
     $product->variable_product_sync();
