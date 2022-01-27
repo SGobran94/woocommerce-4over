@@ -22,7 +22,7 @@ function woo4over_insert_product ($product_data, $post_id)
     //wp_set_object_terms($post_id, $product_data['categories'], 'product_cat'); // Set up its categories
     wp_set_object_terms($post_id, 'variable', 'product_type'); // Set it to a variable product type
 
-    //woo4over_insert_product_attributes($post_id, $product_data['available_attributes'], $product_data['variations']); // Add attributes passing the new post id, attributes & variations // temp comment
+    woo4over_insert_product_attributes($post_id, $product_data['available_attributes'], $product_data['variations']); // Add attributes passing the new post id, attributes & variations // temp comment
     
     woo4over_insert_product_variations($post_id, $product_data['variations'], $product_data['product_name'], $product_data['sku']); // Insert variations passing the new post id & variations   // temp comment
 
